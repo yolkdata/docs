@@ -4,9 +4,7 @@ Collect and stream data from your Javascript data sources. This SDK is an implem
 
 ## 🚀 Setup
 
-### 1. Setup your Yolk Variables
-
-### 2. Add the Javascript snippet to your data source.
+### 1. Add the Javascript snippet to your data source, updating the options (org, apiKey, and env).
 
 ```
 <script>!function(e){if(n)n.options=e||{},n.start instanceof Function?(console.warn("yolk already loaded - starting anyway"),n.start()):console.error("Yolk disabled: `yolk` Object exists but is the wrong type");else{var n={functionQueue:[],options:e||{}};window.yolk=n;var t=["event","context","identify","alias","view","track"];function o(e,t){if(null==e)console.error("missing function name in snippet enqueue() - queued function ignored");else{var o={fn:e,args:t};n.functionQueue.push(o)}}for(let e=0;e<t.length;e++){var i=t[e];n[t[e]]=function(){o(i,Array.prototype.slice.call(arguments))}}var r=document.createElement("script"),a=https://cdn.yolkdata.dev/public/yolk/yolk-tracker/yolk-tracker-0.0.0-3cb0721.js;r.type="text/javascript",r.async=!0,r.src=a,r.addEventListener("load",function(){n.start()}),document.getElementsByTagName("head")[0].appendChild(r)}}(
@@ -18,7 +16,7 @@ Collect and stream data from your Javascript data sources. This SDK is an implem
 );</script>
 ```
 
-### 3. Instrument Tracking
+### 2. Instrument Tracking
 
 #### Track events
 
