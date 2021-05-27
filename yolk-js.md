@@ -1,6 +1,6 @@
 # Yolk's Javascript Tracker
 
-Collect and stream data from your Javascript data sources. This SDK is an implementation of Segment's open source analytics.js.
+Collect and stream data from your Javascript data sources.
 
 ## 🚀 Setup
 
