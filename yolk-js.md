@@ -23,17 +23,21 @@ Collect and stream data from your Javascript data sources.
 
 ```
 yolk.event("event name", {
-  "any":"properties",
-  "you_would":"like to track"
+  "properties":{
+    "any":"properties",
+    "you_would":"like to track"
+  }
 });
 ```
 
 #### Identify users
 
 ```
-yolk.identify({
-  "vid":"3dd34",
-  "orgid":"54t66",
+yolk.alias("alias",{
+  "properties":{
+    "vid":"3dd34",
+    "orgid":"54t66",
+  }
 });
 ```
 
